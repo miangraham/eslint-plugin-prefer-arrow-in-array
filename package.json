@@ -1,0 +1,17 @@
+{
+  "name": "eslint-plugin-prefer-arrow-in-array",
+  "version": "0.0.1",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "3+"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "MIT",
+  "author": "M. Ian Graham",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miangraham/eslint-plugin-prefer-arrow-in-array.git"
+  }
+}
