@@ -2,7 +2,7 @@
 
 An ESLint plugin+rule to suggest arrow functions over function expressions as array elements.
 
-Made for people still using async.waterfall([]) for some reason. (Don't do this. Use async/await instead.)
+Made for a project that's still using async.waterfall. (Don't do this. Use async/await instead.)
 
 Quick hacky fork of [prefer-arrow-callback](http://eslint.org/docs/rules/prefer-arrow-callback) from the ESLint core rules.
 
