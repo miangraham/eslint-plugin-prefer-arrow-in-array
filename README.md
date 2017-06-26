@@ -1,16 +1,16 @@
 # eslint-plugin-prefer-arrow-in-array
 
-A plugin+rule to suggest arrow functions over function expressions as array elements.
+An ESLint plugin+rule to suggest arrow functions over function expressions as array elements.
 
 Made for people still using async.waterfall([]) for some reason. (Don't do this. Use async/await instead.)
 
-Quick hacky fork of prefer-arrow-callback from eslint core rules.
+Quick hacky fork of [prefer-arrow-callback](http://eslint.org/docs/rules/prefer-arrow-callback) from the ESLint core rules.
 
-Original author: Toru Nagashima. Original LICENSE (MIT) preserved.
+Original author: Toru Nagashima. Original [LICENSE](./LICENSE) (MIT) preserved.
 
 ## Configuration
 .eslintrc additions:
-```
+```yaml
 ---
 plugins:
     - prefer-arrow-in-array
@@ -19,24 +19,26 @@ rules:
 ```
 
 ## Disallowed
-```
+```js
 async.waterfall([
   function (next) {
     const foo = 'bar';
     return next(null, foo);
-  }
+  },
+  // ...
 ],
   // ...
 );
 ```
 
-## Allowed and autofixed
-```
+## Allowed (autofixed)
+```js
 async.waterfall([
   next => {
     const foo = 'bar';
     return next(null, foo);
-  }
+  },
+  // ...
 ],
   // ...
 );
