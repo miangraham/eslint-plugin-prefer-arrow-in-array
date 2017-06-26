@@ -6,7 +6,7 @@ Made for people still using async.waterfall([]) for some reason. (Don't do this.
 
 Quick hacky fork of [prefer-arrow-callback](http://eslint.org/docs/rules/prefer-arrow-callback) from the ESLint core rules.
 
-Original author: Toru Nagashima. Original [LICENSE](./LICENSE) (MIT) preserved.
+Original author: [Toru Nagashima](https://github.com/mysticatea). Original [LICENSE](./LICENSE) (MIT) preserved.
 
 ## Configuration
 .eslintrc additions:
